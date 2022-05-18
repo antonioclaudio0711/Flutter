@@ -41,13 +41,13 @@ class _PerguntaAppState extends State<PerguntaApp> {
     }
   ];
 
+  var _pergunta_selecionada = 0;
   bool get sim_pergunta_selecionada {
     return _pergunta_selecionada < _perguntas.length;
   }
 
-  var _pergunta_selecionada = 0;
-  var _nota_total = 0;
 
+  var _nota_total = 0;
   void _responder(int nota) {
     if (sim_pergunta_selecionada) {
       setState(() {
